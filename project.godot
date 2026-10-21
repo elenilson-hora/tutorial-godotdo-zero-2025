@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="Tutorial Godotdo Zero 2025"
-config/features=PackedStringArray("4.7", "Mobile")
+run/main_scene="uid://dewxixx77ckkq"
+config/features=PackedStringArray("4.7", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=150
+window/size/viewport_height=100
+window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -29,5 +33,6 @@ project/assembly_name="Tutorial Godotdo Zero 2025"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
