@@ -1,0 +1,67 @@
+[gd_resource type="TileSet" format=3 uid="uid://dtu3ksjapvi7v"]
+
+[ext_resource type="Texture2D" uid="uid://b6yrlaumlyj42" path="res://sprites/Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="1_s32qd"]
+[ext_resource type="Texture2D" uid="uid://cslotj6dp1ksr" path="res://sprites/Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png" id="2_stxsa"]
+[ext_resource type="Texture2D" uid="uid://8ixjgrrula6t" path="res://sprites/Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="3_tbrwh"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_7fyak"]
+tile_data = PackedInt32Array(0, 327680, 1, 1, 327680, 1, 2, 65536, 1, 3, 327680, 1, 4, 327680, 1, 5, 589824, 1, 6, 327680, 1, 65543, 65536, 5, 8, 327680, 1, 9, 65536, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hpqh"]
+texture = ExtResource("1_s32qd")
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+1:5/0/z_index = 3
+3:5/0 = 0
+5:5/0 = 0
+5:5/0/z_index = 3
+6:5/0 = 0
+6:5/0/z_index = 3
+7:5/0 = 0
+7:5/0/z_index = 3
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+14:5/0 = 0
+16:5/0 = 0
+18:5/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+1:1/0/z_index = 2
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+9:1/size_in_atlas = Vector2i(3, 3)
+9:1/0 = 0
+9:1/0/z_index = 2
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7f7ne"]
+texture = ExtResource("2_stxsa")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtryj"]
+texture = ExtResource("3_tbrwh")
+0:0/size_in_atlas = Vector2i(7, 6)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+0:0/0/z_index = -1
+8:0/size_in_atlas = Vector2i(7, 6)
+8:0/0 = 0
+8:0/0/texture_origin = Vector2i(0, 8)
+8:0/0/z_index = -1
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_1hpqh")
+sources/1 = SubResource("TileSetAtlasSource_7f7ne")
+sources/2 = SubResource("TileSetAtlasSource_rtryj")
+pattern_0 = SubResource("TileMapPattern_7fyak")
